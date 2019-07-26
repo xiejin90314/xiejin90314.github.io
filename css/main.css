@@ -1833,7 +1833,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7cabfc;
+  background: #ffff12;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3133,8 +3133,10 @@ pre .javascript .function {
   }
 }
 ::selection {
-  color: #d3d3d3 !important;
+  background: #d3d3d3 !important;
+  color: #fff !important;
 }
 ::-moz-selection {
-  color: #d3d3d3 !important;
+  background: #d3d3d3 !important;
+  color: #fff !important;
 }
