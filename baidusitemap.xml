@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://www.xiejin.xin/jenkins-pipeline/</loc>
+    <loc>http://blog.xiejin.xin/jenkins-pipeline/</loc>
     <lastmod>2019-07-26</lastmod>
   </url>  <url>
-    <loc>http://www.xiejin.xin/springboot-rabbitmq-deadletter/</loc>
+    <loc>http://blog.xiejin.xin/springboot-rabbitmq-deadletter/</loc>
     <lastmod>2019-01-25</lastmod>
   </url>  <url>
-    <loc>http://www.xiejin.xin/es2habse_2ndindex/</loc>
+    <loc>http://blog.xiejin.xin/es2habse_2ndindex/</loc>
     <lastmod>2018-12-01</lastmod>
   </url>
 </urlset>
