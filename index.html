@@ -373,19 +373,14 @@
 
       
         
-          
-            <p>   最近几年中台化的思想越来越流行,很多企业都开始向着中台化的方向发展,但是很多也朝着奇怪的方向发展.<br>伴随着中台化的演进,构建微服务肯定是大家离不开的技术点,那么大家往往构建微服务的时候,确实按照领域模<br>的方向在发展.但是,依照我的工作经验来看,大部分公司往往是单纯的把业务逻辑扒开,拆分成一个一个独立的<br>模块,并没有按照中台的方向去迭代,甚至越迭代离中台话越远.<br>    大家构建微服务的本质是想把服务组件化,然后提供一系列的接口对外提供服务,这就是我们常说的Baas.<br>但是看了大家定义的对外接口,真的是让人抓耳挠腮.2000年的时候托马斯老爷子提出了<a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm" target="_blank" rel="noopener">restful</a> 的规范到现在,<br>接近了20年,我们仍旧可以看到一大堆的不符合rest规范的接口,如果有人去做过统计的话,可能不符合规范的<br>接口几倍于规范接口.<br>  下面举几个简单的例子</p>
-<ul>
-<li>Get xxx/getUserInfo?userId=123  获取用户信息</li>
-<li>Post xxx/editUserName 修改用户名<br> 大家是不是经常在项目中看到类似的接口地址呢,那么我们说的restful风格的接口是什么样呢<br> 我觉得至少满足如下的特征</li>
-<li>充分利用了HttpMethod [GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS, TRACE]</li>
-<li>接口中主路径只有名词,且是复数形式 比如 books, </li>
-<li>接口提供的一定是某种资源, 这个比较抽象,就比如上面的books,其实就是表示我这个路径提供对book<br>这个资源的读写等一些列的操作<br> 下面我列了几个例子<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">POST /cups  这个表示我需要新增一个杯子,至于是上面样的杯子,客户端和服务端需要约定好请求的参数格式就行</span><br><span class="line">这块建议大家在返回的时候把新增成功之后的这个杯子的访问路径也同步返回,可以放在header中或者其他地方,</span><br><span class="line">返回的格式可以是 http://x.x.x/cups/123</span><br><span class="line">GET  /cups/123 获取id为123的一个杯子信息</span><br><span class="line">PUT /cups/123/color 修改id为123这个杯子的颜色 这个HttpMethod的可以用PATCH 表示局部更新,大家可以</span><br><span class="line">自己去理解下 这里我不做强制的区分了</span><br><span class="line">DELETE /cups/123 删除id为123这个杯子的信息</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>  很多小伙伴可能会说,我如果严格按照restful的规范,那么很多业务逻辑我根本就处理不了,其实我理解这里是<br>有误区的,并是不restful满足不了很多特殊的需求.而是我们设计的接口不能满足业务需求,比如有的小伙伴说了,<br>我现在需要查找一个color为黑色,并且是纸做的杯子,怎么办?产品经理一定要这样的,<br>那是不是可以设计这样一个接口<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">GET /cups?color=black&amp;type=wapper的接口,其实本质还是GET /cups的接口,只不过我们接口提供了</span><br><span class="line">一些参数而已</span><br></pre></td></tr></table></figure></p>
-
-          
+          <p>   最近几年中台化的思想越来越流行,很多企业都开始向着中台化的方向发展,但是很多也朝着奇怪的方向发展.<br>伴随着中台化的演进,构建微服务肯定是大家离不开的技术点,那么大家往往构建微服务的时候,确实按照领域模<br>的方向在发展.但是,依照我的工作经验来看,大部分公司往往是单纯的把业务逻辑扒开,拆分成一个一个独立的<br>模
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/restful/" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
