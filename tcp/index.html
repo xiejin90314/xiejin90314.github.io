@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="tcp 三次握手 可靠通信," />
 
 
 
@@ -79,14 +79,18 @@
 
 
 
-<meta name="keywords" content="程序猿土豆 程序员 土豆">
-<meta property="og:type" content="website">
-<meta property="og:title" content="程序猿土豆">
-<meta property="og:url" content="http://blog.xiejin.xin/tags/springboot/index.html">
+<meta name="description" content="最近听见许许多多面试官反馈,许多来公司面试的小伙伴连TCP三次握手都不甚理解.为啥我们觉得很平常的东西,仍旧有许多小伙伴不甚理解呢,觉得可能是技术相关文档太枯燥,导致大家只是记住了,而没有理解,今天我白话的阐述一下,为啥TCP需要三次握手.我们都知道,TCP要保证可靠的传输,一定需要经过三次握手,那么为什么是三次呢?不是二次呢?或者更多次握手??  在这里我举个例子,应该很简单的就能帮助小伙伴去理">
+<meta name="keywords" content="tcp 三次握手 可靠通信">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TCP三次握手">
+<meta property="og:url" content="http://blog.xiejin.xin/tcp/index.html">
 <meta property="og:site_name" content="程序猿土豆">
+<meta property="og:description" content="最近听见许许多多面试官反馈,许多来公司面试的小伙伴连TCP三次握手都不甚理解.为啥我们觉得很平常的东西,仍旧有许多小伙伴不甚理解呢,觉得可能是技术相关文档太枯燥,导致大家只是记住了,而没有理解,今天我白话的阐述一下,为啥TCP需要三次握手.我们都知道,TCP要保证可靠的传输,一定需要经过三次握手,那么为什么是三次呢?不是二次呢?或者更多次握手??  在这里我举个例子,应该很简单的就能帮助小伙伴去理">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-08-26T08:04:12.831Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="程序猿土豆">
+<meta name="twitter:title" content="TCP三次握手">
+<meta name="twitter:description" content="最近听见许许多多面试官反馈,许多来公司面试的小伙伴连TCP三次握手都不甚理解.为啥我们觉得很平常的东西,仍旧有许多小伙伴不甚理解呢,觉得可能是技术相关文档太枯燥,导致大家只是记住了,而没有理解,今天我白话的阐述一下,为啥TCP需要三次握手.我们都知道,TCP要保证可靠的传输,一定需要经过三次握手,那么为什么是三次呢?不是二次呢?或者更多次握手??  在这里我举个例子,应该很简单的就能帮助小伙伴去理">
 
 
 
@@ -116,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.xiejin.xin/tags/springboot/"/>
+  <link rel="canonical" href="http://blog.xiejin.xin/tcp/"/>
 
 
 
 
 
-  <title>标签: springboot | 程序猿土豆</title>
+  <title>TCP三次握手 | 程序猿土豆</title>
   
 
 
@@ -141,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -235,54 +239,210 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>springboot<small>标签</small>
-        </h2>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.xiejin.xin/tcp/">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="土豆你个马铃薯">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序猿土豆">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/springboot-rabbitmq-deadletter/" itemprop="url">
-              
-                <span itemprop="name">SpringBoot消费RabbitMQ 通过死信保证无法消费的消息不会丢失</span>
-              
-            </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">TCP三次握手</h2>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-01-25T16:47:28+08:00"
-              content="2019-01-25" >
-          01-25
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-26T16:02:32+08:00">
+                2019-08-26
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/tcp/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/tcp/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/tcp/" class="leancloud_visitors" data-flag-title="TCP三次握手">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">围观次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>最近听见许许多多面试官反馈,许多来公司面试的小伙伴连TCP三次握手都不甚理解.为啥我们觉得很平常的东西,仍旧有许多小伙伴不甚理解呢,<br>觉得可能是技术相关文档太枯燥,导致大家只是记住了,而没有理解,今天我白话的阐述一下,为啥TCP需要三次握手.<br>我们都知道,TCP要保证可靠的传输,一定需要经过三次握手,那么为什么是三次呢?不是二次呢?或者更多次握手??<br>  在这里我举个例子,应该很简单的就能帮助小伙伴去理解了~<a id="more"></a></p>
+<p>  现实生活中有一个村子,有许许多多的村民,很少来往,有天村民A想去找一个他自己不认识的村民B, 但是A不认识B人,只知道B的门牌号,<br>  于是A根据门牌号找到了B的住址, 这里就是计算器A想和计算B想要建立连接的第一步,你得知道人家的IP地址.</p>
+<ol>
+<li>村名A找到B的地址之后,看见了村民B本人,于是发出了亲切的问候:”雷猴呀”,这就相当于计算机A发出的请求建立连接的请求信息syn=雷猴呀</li>
+<li>B听见A跟自己打招呼,虽然很困惑,但是还是回复了:”雷猴呀, 你是?”,这就相当于计算机B表示收到了信息,SYN+ACK=(雷猴呀+ 你是)</li>
+<li><p>A听见B给了自己回复,就继续说自己找A的原因:”xxxxooo…….”,这就相当于计算机A表示收到了信息,ACK=(…..)</p>
+<p>至此三次握手完成…<br>那么很多人疑惑,为啥要三次呢?这里打个比方:村民A和村民B之前并不认识, 不知道对方是不是聋哑人,二个人想要沟通,必须同时能听见和说话,有任何一方是聋哑人,那么沟通都无法进行,也是就是我们说没法进行可靠的沟通,[拒绝任何说打手语或者其他沟通途径]</p>
+</li>
+</ol>
+<p>在1处,村民A发出了亲切的问候,我们可以知道,村民A是有说话的能力的[计算器A发包没有任何问题].<br>村民B收到A的问候,发出反问候,说明了什么? 说明了村民B不是聋子,同时发出反问候,说明他也不是哑巴,不然也没法发出反问候<br>[计算机B是可以正常接收到数据包,也可以正常发出数据包],<br>在2处 对于村民A来说,A现在知道了:村民B可以正常听见我说话,也可以给我反馈, 说明对于村民A来说 村民B是正常人,完全可以正常沟通.<br>但是,在2处 村民B还不知道村民A能不能听见自己说的话,因为村民A还没有给自己反馈,所以在这里,二次握手肯定是不可靠的.因为计算机B<br>只是知道计算机A能发数据包,还不知道计算机A能不能收数据包,这一起还要等到3处才能完成,这时候村民A霹雳巴拉说出自己找村民B的原因,<br>可以视为村民B知道了A是能说话的,这时候二人可以进行可靠的交流,这就是第三次的握手..</p>
+<p>说到这里,小伙伴是不是知道TCP三次握手的原因呢?知其然知其所以然才能更加了解,不然死记硬背是很难长久记忆的</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/tcp-三次握手-可靠通信/" rel="tag"> tcp 三次握手 可靠通信</a>
+          
+        </div>
+      
+
+      
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center; background-color: #f5f5f5">
+  <img id="wechat_subscriber_qcode" src="/images/gongzhonghao.jpg" alt="土豆你个马铃薯 wechat" style="width: 100px; max-width: 100%;"/>
+    <div>扫我交流下01的世界吧。段子界的程序员,程序届的最强段子手</div>
+</div>
+
+      </div>
+    
+
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/restful/" rel="next" title="理解restful">
+                <i class="fa fa-chevron-left"></i> 理解restful
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -290,6 +450,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -531,6 +698,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
