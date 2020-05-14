@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.xiejin.xin/oauth2/</loc>
+    
+    <lastmod>2020-05-14T12:09:03.729Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.xiejin.xin/feignget/</loc>
     
     <lastmod>2019-09-12T09:42:25.930Z</lastmod>
